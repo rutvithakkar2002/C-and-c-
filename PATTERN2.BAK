@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,t,i,j;
+	char ch;
+	clrscr();
+	printf("\n Enter the numbers of rows:");
+	scanf("%d",&n);
+	fflush(stdin);
+	printf("Enter the character: ");
+	scanf("%c",&ch);
+	for(t=1;t<=3;t++)
+	{
+		for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				textcolor(RED);
+				cprintf("%c",ch);
+			}
+			printf("\n");
+		}
+	}
+	printf("\n Rutvi");
+	printf("\n");
+	for(i=n;i>=1;i--)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%c",ch);
+		}
+		printf("\n");
+	}
+	getch();
